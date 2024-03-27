@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-container {
+    text-align: center;
+    position: relative;
+    padding-top: 3px;
+}
+
+.top-container h1 {
+    font-family: 'Charm', cursive;
+    text-shadow:  0.5px 0.5px #b284e7;
+    color: #48bd6be0;
+    font-size: 2.5rem;
+}
+
+.top-container h5 {
+    font-family: 'Kalam', cursive;
+    color: #319aa1;
+    text-decoration: underline;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+
+}
+
+.container .left {
+    position: relative;
+    background: #167266;
+    padding: 40px;
+}
+
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* .profileText .profileImg {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+} */
+
+.profileText .profileImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h1 {
+    color: #c4f9fd;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.profileText h2 span {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.Info {
+    padding: 20px;
+}
+
+.title {
+    color: #0bff5c;
+    text-decoration: underline 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px; 
+}
+
+.Info ul {
+    position: relative;
+    margin: 10px;
+}
+
+.Info ul li {
+    position: relative;
+    list-style: none;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.Info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #0af6d7; 
+    margin: 2px;
+}
+
+.Info ul li span {
+    color: #fff;
+    font-weight: 200;
+}
+
+.Info ul li .text3 {
+    font-style: oblique;
+    color: #aad9f8;
+    text-decoration: underline;
+}
+
+
+.Info.education li {
+    margin-bottom: 25px;
+}
+
+.Info.education h5 {
+    color: #06f6d7;
+    font-weight: 500;
+}
+
+.Info.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.Info.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.Info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+} 
+
+.Info.language .percent div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: #06f6d7;
+}
+
+.container .right {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+.about:last-child {
+    margin-bottom: 0px;
+}
+
+.text {
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.title2 {
+    text-decoration: underline 1px;
+    color: #09a75d;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}  
+
+p {
+    display: flex;
+    color: #333;
+    word-spacing: 4px;
+    line-height: 20px;
+    text-align: left;
+     line-height: 30px; 
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0; 
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+/* 
+.about .box .exp h5 {
+    min-width: 150px;
+    color: #235036;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0; 
+   
+    
+} */
+
+.text3 h3 {
+    color: #1a7288;
+    font-weight: 800; 
+    font-size: 19px; 
+    text-decoration: underline;
+}
+
+/* .about .box .plant h3 {
+    color: rgb(20, 126, 168);
+    font-size: 18px;
+    text-decoration: underline 1px;
+    margin-bottom: 2px;
+    position: absolute;
+} */
+
+.about .box .year_company h5 {
+    color: #498128;
+    font-weight: 800; 
+    font-size: 17px; 
+    text-decoration: underline;
+}
+
+.about .box .course h3 {
+    color: rgb(27, 152, 161);
+    font-size: 18px;
+    text-decoration: underline 1px;
+    margin-bottom: 2px;
+    position: absolute;
+}
+
+.text ul li {
+    padding: 5px 0 5px 0;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #2a3035;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #69e6d7;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 18px 0;
+    
+}
+
+.bottom_container a {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    font-size: small;
+    font-weight: 300;
+    color: #167244;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
