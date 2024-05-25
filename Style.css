@@ -238,7 +238,7 @@ p {
     min-width: 150px;
 }
 
-/* 
+
 .about .box .exp h5 {
     min-width: 150px;
     color: #235036;
@@ -247,7 +247,7 @@ p {
     margin: 10px 0; 
    
     
-} */
+}
 
 .text3 h3 {
     color: #1a7288;
@@ -257,13 +257,13 @@ p {
     text-decoration: underline;
 }
 
-/* .about .box .plant h3 {
+.about .box .plant h3 {
     color: rgb(20, 126, 168);
     font-size: 18px;
     text-decoration: underline 1px;
     margin-bottom: 2px;
     position: absolute;
-} */
+}
 
 .about .box .year_company h5 {
     color: #498128;
