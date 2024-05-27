@@ -144,6 +144,8 @@
 
                                                 <!----Projects------>
 
+        
+
             <div class="about">
                 <h2 class="title2">Projects</h2>
                 <div class="box">
@@ -166,6 +168,21 @@
 
 
                 <div class="text3">
+                    <h3>Weather Tracking website:</h3>
+
+                    <div class="li">
+                        <ul>
+                            <li>Use HTML, CSS and JavaScript to design the user interface.</li>
+                            <li>Integrate OpenWeatherMap API to get real-time weather information.</li>
+                            <li>Deploy website on an Amazon Elastic Compute Cloud instance.</li>
+                            <li>Set-up Nginx as a web server and CloudFront as a CDN.</li>
+                          </ul>
+                      </div>
+                   
+                </div>
+
+
+                <div class="text3">
                     <h3>Host static website on S3:</h3>
 
                     <div class="li">
@@ -180,16 +197,17 @@
                 </div>
 
 
+
                 <div class="text3">
-                    <h3>SSH EC2 using Terminal:</h3>
+                    <h3>AWS IaC using Terraform:</h3>
 
                     <div class="li">
                         <ul>
-                            <li>Obtain the instance's public IP address from the AWS Console.</li>
-                            <li>Download the key pair and change its permission to (400).</li>
-                            <li>Open Terminal & use SSH command "ssh -i key.pem ubuntu@ip" to connect.</li>
-                            <li>There will be a few prompts that should be accepted.</li>
-                            <li>After a successful connection, Terminal username should changed to EC2 instance IP.</li>
+                            <li>Define VPC with CIDR block and two subnets within two Availability Zones.</li>
+                            <li>Configure ALB, associate it with public subnet, and define security group for desired port access.</li>
+                            <li>Create S3 bucket with access control settings.</li>
+                            <li>Define Route Table as public subnet to internet gateway, private subnet to NAT gateway.</li>
+                            <li>Run Terraform scripts to automate defined resource creation in AWS.</li>
                           </ul>
                       </div>
                    
@@ -211,7 +229,6 @@
                         
                     </div>
 
-                            
 
 
                                         <!-- Certification -->
