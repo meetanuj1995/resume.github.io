@@ -6,349 +6,346 @@
 }
 
 body {
-    background: lightslategray;
+    background: rgb(48, 48, 49);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.top-container {
-    text-align: center;
-    position: relative;
-    padding-top: 3px;
-}
 
-.top-container h1 {
-    font-family: 'Charm', cursive;
-    text-shadow:  0.5px 0.5px #b284e7;
-    color: #48bd6be0;
-    font-size: 2.5rem;
-}
-
-.top-container h5 {
-    font-family: 'Kalam', cursive;
-    color: #319aa1;
-    text-decoration: underline;
-}
 
 .container {
     position: relative;
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    background: #fff;
-    margin: 50px;
+    margin: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+    box-shadow: 0 35px 55px rgba(199, 35, 35, 0.2);
 
 }
 
-.container .left {
-    position: relative;
-    background: #167266;
-    padding: 40px;
+ @media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
 
-
-.profileText {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-/* .profileText .profileImg {
-    position: relative;
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    overflow: hidden;
-} */
-
-.profileText .profileImg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.profileText h1 {
-    color: #c4f9fd;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.4rem;
-}
-
-.profileText h2 span {
-    font-size: 0.7rem;
-    font-weight: 300;
-}
-
-.Info {
-    padding: 20px;
-}
-
-.title {
-    color: #0bff5c;
-    text-decoration: underline 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-    margin-bottom: 20px; 
-}
-
-.Info ul {
-    position: relative;
-    margin: 10px;
-}
-
-.Info ul li {
-    position: relative;
-    list-style: none;
-    margin: 25px 0;
-    cursor: pointer;
-}
-
-.Info ul li .icon {
-    display: inline-block;
-    width: 30px;
-    font-size: 20px;
-    color: #0af6d7; 
-    margin: 2px;
-}
-
-.Info ul li span {
-    color: #fff;
-    font-weight: 200;
-}
-
-.Info ul li .text3 {
-    font-style: oblique;
-    color: #aad9f8;
-    text-decoration: underline;
-}
-
-
-.Info.education li {
-    margin-bottom: 25px;
-}
-
-.Info.education h5 {
-    color: #06f6d7;
-    font-weight: 500;
-}
-
-.Info.education h4:nth-child(2) {
-    color: #fff;
-    font-weight: 500;
-}
-
-.Info.education h4 {
-    color: #fff;
-    font-weight: 300;
-}
-
-.Info.language .percent {
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background: #f0f0f0;
-    display: block;
-    margin-top: 5px;
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr; 
+        margin: 20px;
+    }
+    .left, .right {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    .left .info ul li {
+        font-size: 14px;
+    }
+    .right .top, .right .about, .right .projects {
+        font-size: 14px;
+    }
 } 
 
-.Info.language .percent div {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    background: #06f6d7;
-}
-
-.container .right {
-    position: relative;
-    background: rgb(255, 255, 255);
-    padding: 40px;
-}
-
-.about {
-    margin-bottom: 20px;
-}
-
-.about:last-child {
-    margin-bottom: 0px;
-}
-
-.text {
-    margin-bottom: 5px;
-    margin-top: 25px;
-}
-
-.title2 {
-    text-decoration: underline 1px;
-    color: #09a75d;
-    text-transform: uppercase;
-    margin-top: 5px;
-}  
-
-.title1 {
-   text-align: center;
-   text-decoration: underline 1px;
-   color: #09a75d;
-   text-transform: uppercase;
-   margin-bottom: 2px;
-}  
-
-
-p {
-    display: flex;
-    color: #333;
-    word-spacing: 3px;
-    line-height: 20px;
-    text-align: left;
-     line-height: 30px; 
-}
-
-.li {
-    display: flex;
-    color: #333;
-    word-spacing: 3px;
-    line-height: 20px;
-    text-align: left;
-     line-height: 30px; 
-     margin-top: 5px;
-}
-
-.about .box {
-    display: flex;
-    flex-direction: row;
-    margin: 15px 0; 
-}
-
-.about .box .year_company {
-    min-width: 150px;
-}
-
-
-.about .box .exp h5 {
-    min-width: 150px;
-    color: #235036;
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0; 
-   
-    
-}
-
 .text3 h3 {
-    color: #1a7288;
+    color: #093f4d;
     font-weight: 800; 
     font-size: 19px; 
     margin-top: 4px;
     text-decoration: underline;
 }
 
-.about .box .plant h3 {
-    color: rgb(20, 126, 168);
-    font-size: 18px;
-    margin-bottom: 2px;
-    position: absolute;
-}
 
-.about .box .year_company h5 {
-    color: #498128;
-    font-weight: 800; 
-    font-size: 17px; 
-    text-decoration: underline;
-}
 
-.about .box .course h3 {
-    color: rgb(27, 152, 161);
-    font-size: 18px;
-    text-decoration: underline 1px;
-    margin-bottom: 2px;
-    position: absolute;
-}
 
-.text ul li {
-    padding: 5px 0 5px 0;
-}
+/* -----------------------------------------------------Sidebar----------------------------------------------------------*/
 
-.skills .box {
+.container .left {
     position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
+    background: #0b180b;
+    padding-left: 15px;
 }
 
-.skills .box h4 {
+.title_left{
+    color: #09f73d;
     text-transform: uppercase;
-    font-weight: 500;
-    color: #2a3035;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px; 
+    text-decoration: underline;
+    padding-left: 20px;
 }
 
-.skills .box .percent {
+
+/* -------------------------------------------------------------Contact-------------------------------------------------------*/
+
+
+
+.title_left {
+    letter-spacing: 0.8px;
+    padding-top: 30px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.info ul {
     position: relative;
-    width: 100%;
-    height: 10px;
-    background: #fff;
+    margin: 10px;
 }
 
-.skills .box .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #69e6d7;
+.info ul li {
+    position: relative;
+    list-style: none;
+    margin: 25px 0;
+    padding-left: 20px;
 }
 
-.interest ul {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.info ul li .icon {
+    display: inline-block;
+    width: 20px;
+    font-size: 17px;
+    color: #0af6d7; 
+    margin: 0.094em;
 }
+
+
+.info ul li .text3 {
+    color: #fff;
+}
+
+.info ul li .text4 {
+    color: #fff;
+}
+
+
+.info ul li .text3:hover {
+    color: #f62206;
+}
+
+
+/* ---------------------------------------------------------------------------Education-------------------------------------------------------------------*/
+
+
+.info.education h5 {
+    color: #06f6d7;
+    font-weight: 500;
+}
+
+
+.info.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------Certification-------------------------------------------------------------------*/
+
+.info .title_left {
+    align-items: flex-start;
+}
+
+.certificates a {
+    text-decoration: none;
+
+}
+
+
+.course h3 {
+    display: flex;
+    color: rgb(102, 128, 245);
+    font-size: 18px;
+    margin-bottom: 1px;
+    position: relative;
+    text-decoration-style: none;
+}
+
+.course h3:hover {
+    color: rgb(247, 9, 227);
+}
+
+
+
+
+/*-----------------------------------------------------Skills---------------------------------------------------------------*/
+
+
 
 .interest ul li {
-    list-style: none;
-    color: #333;
-    font-weight: 500;
-    margin: 18px 0;
+    color: #fff;
+
+}
+
+/*-----------------------icons------------------*/
+
+
+
+.fa-linux {
+    margin-right: 0.5rem;
+}
+
+.fa-aws {
+    margin-right: 0.5rem;
+}
+
+.fa-docker {
+    margin-right: 0.5rem;
+}
+
+.fa-jenkins {
+    margin-right: 0.5rem;
+}
+
+.fa-github{
+    margin-right: 0.8rem;
+}
+
+
+.kuber {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 16px;
     
 }
 
-.bottom_container a {
-    position: relative;
-    display: flex;
-    justify-content: right;
-    font-size: small;
-    font-weight: 300;
-    color: #167244;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.icon {
+    width: 1.4rem; 
+    height: 1.4rem;
+    margin-right: 0.4rem;
 }
 
 
 
-.cib--kubernetes {
-    display: inline-block;
-    width: 1.2em;
-    height: 1.2em;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='m13.604 19.136l.011.009l-1.333 3.219a6.89 6.89 0 0 1-2.765-3.463l3.437-.584l.005.005a.59.59 0 0 1 .645.813zm-1.109-2.839a.588.588 0 0 0 .229-1.011l.005-.016l-2.615-2.339a6.868 6.868 0 0 0-.975 4.339l3.349-.964zm1.526-2.641c.38.276.911.016.932-.453l.016-.005l.197-3.495a6.851 6.851 0 0 0-4.016 1.928l2.865 2.025zm1.015 3.667l.964.464l.964-.464l.239-1.036l-.667-.833h-1.072l-.667.833zm2-4.13a.584.584 0 0 0 .933.447l.009.005l2.844-2.015a6.88 6.88 0 0 0-3.989-1.923l.197 3.485zm14.5 7.963l-7.697 9.573c-.407.5-1.016.792-1.661.792l-12.349.005c-.645 0-1.26-.292-1.667-.797L.465 21.156a2.118 2.118 0 0 1-.412-1.787L2.804 7.432A2.085 2.085 0 0 1 3.955 6L15.075.683a2.166 2.166 0 0 1 1.848 0l11.125 5.312a2.127 2.127 0 0 1 1.151 1.432L31.95 19.37a2.128 2.128 0 0 1-.412 1.787zm-4.385-2.744c-.057-.011-.135-.037-.192-.048c-.235-.041-.423-.031-.641-.047c-.463-.052-.848-.088-1.192-.197c-.141-.052-.24-.219-.287-.292l-.271-.079a8.452 8.452 0 0 0-.141-3.109a8.594 8.594 0 0 0-1.244-2.88c.068-.063.197-.176.233-.213c.011-.12 0-.244.125-.375c.265-.251.595-.453.989-.699c.193-.109.365-.181.557-.323c.043-.031.1-.083.147-.12c.317-.249.391-.692.161-.979s-.672-.312-.989-.063c-.047.037-.109.084-.152.12c-.176.156-.285.307-.437.469c-.328.333-.604.609-.9.807c-.125.079-.319.052-.401.047l-.256.183a8.697 8.697 0 0 0-5.525-2.672l-.016-.297c-.088-.083-.192-.156-.219-.333c-.031-.359.021-.744.079-1.208c.025-.219.077-.396.088-.635v-.188c0-.407-.303-.74-.667-.74c-.369 0-.667.333-.667.74v.188c.011.239.063.416.088.635c.057.464.105.849.079 1.208a.767.767 0 0 1-.219.344l-.016.281a8.544 8.544 0 0 0-5.552 2.672c-.083-.057-.161-.115-.24-.172c-.119.016-.239.052-.395-.036c-.297-.204-.573-.48-.901-.813c-.151-.161-.26-.312-.437-.463c-.043-.037-.104-.084-.147-.12a.844.844 0 0 0-.463-.177a.646.646 0 0 0-.532.235c-.229.292-.156.729.161.984l.011.005l.141.109c.187.141.359.213.552.323c.396.251.724.453.989.699c.099.109.12.301.131.385l.213.187a8.642 8.642 0 0 0-1.36 6.011l-.276.079c-.073.099-.177.244-.287.292c-.344.109-.729.145-1.192.192c-.219.021-.407.011-.641.052c-.052.011-.12.032-.177.041l-.004.005h-.011c-.391.095-.647.459-.563.813c.077.353.463.572.859.484h.011l.011-.005l.172-.036c.229-.063.396-.152.599-.229c.437-.156.808-.292 1.161-.344c.147-.011.308.093.38.136l.292-.048a8.65 8.65 0 0 0 3.839 4.792l-.12.292c.047.115.095.265.057.375c-.125.339-.349.693-.599 1.084c-.125.181-.251.323-.36.531c-.025.052-.057.131-.083.183c-.172.364-.047.787.281.948c.333.156.744-.011.921-.38c.027-.052.063-.12.084-.172c.093-.213.125-.401.192-.609c.172-.443.271-.907.516-1.199c.068-.077.172-.109.287-.135l.151-.276a8.619 8.619 0 0 0 6.145.015l.141.256c.115.036.24.057.339.208c.183.307.307.677.459 1.12c.067.208.099.396.192.609c.021.047.057.12.084.172c.176.369.588.536.916.375c.333-.156.459-.579.287-.948a7.273 7.273 0 0 1-.088-.177c-.109-.208-.235-.348-.355-.531c-.255-.391-.464-.719-.593-1.057c-.052-.172.009-.276.052-.391c-.027-.031-.079-.193-.109-.271a8.682 8.682 0 0 0 3.839-4.828c.083.015.233.041.285.052c.1-.068.188-.152.371-.141c.353.052.724.188 1.161.344c.203.079.369.167.599.229c.047.016.115.027.172.036l.011.005h.011c.396.089.781-.129.859-.484c.084-.355-.172-.719-.563-.812zm-5.287-5.48l-2.599 2.328v.011a.59.59 0 0 0 .229 1.011l.005.011l3.369.968c.073-.744.027-1.5-.145-2.229a6.87 6.87 0 0 0-.86-2.099zm-5.348 7.104a.591.591 0 0 0-.537-.312a.6.6 0 0 0-.5.312l-1.692 3.057c1.437.491 3 .491 4.437 0l-1.693-3.057zm2.515-1.724a.589.589 0 0 0-.646.808v.005l1.344 3.249a6.846 6.846 0 0 0 2.776-3.484l-3.469-.588z'/%3E%3C/svg%3E");
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    margin-right: 3px;
-  }
+
+
+
+
+
+
+/* ------------------------------------------------------------Right Containers-----------------------------------------------------------*/
+
+
+
+.container .right {
+    position: relative;
+    background: rgb(221, 240, 231);
+    padding: 40px;
+}
+
+.title {
+    text-decoration: underline 1px;
+    color: #09a75d;
+    text-transform: uppercase;
+    margin-top: 5px;
+} 
+
+
+p {
+    display: flex;
+    color: #333;
+    word-spacing: 3px;
+    line-height: 26px;
+    text-align: left;
+     
+}
+
+
+/* ------------------------------------------------------------Name @ About----------------------------------------------------*/
+
+.name {
+    text-align: center;
+    text-decoration: underline 1px;
+    color: #09a75d;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}  
+
+.top {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* -----------------------------------------------------------------Experience--------------------------------------------------*/
+
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0; 
+}
+
+
+.box .exp {
+    min-width: 150px;
+
+}
+
+.box .exp h5 {
+    color: #235036;
+    font-weight: 600;
+}
+    
+
+.plant h3 {
+    color: rgb(20, 126, 168);
+    font-size: 18px;
+}
+
+
+
+
+.list {
+    display: flex;
+    color: #333;
+    word-spacing: 3px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+/*------------------------------------------------------------------Projects------------------------------------------------------------------*/
+
+.title_p {
+    text-decoration: underline 1px;
+    color: #09a75d;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.text3 h3 {
+    padding-top: 7px;
+}
+
+
+.li {
+    display: flex;
+    color: #333;
+    word-spacing: 2px;
+    line-height: 20px;
+    text-align: left;
+    line-height: 27px; 
+    margin-top: 5px;
+}
+
+.services {
+    color: #0d0e0d;
+    font-weight: 600;
+    font-style: italic;
+}
+
